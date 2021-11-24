@@ -7,10 +7,11 @@
     align-items: center;
     background-color: transparent;
     padding: 50px 20px;
-    position: sticky;
+    // position: sticky;
+    background: $bg_color;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: -1;
     width: 100%;
   
     &-logo {
@@ -70,6 +71,10 @@
     }
 }
 @media screen and (max-width: 768px) {
+  .header{
+    position: sticky;
+    padding-bottom: 10px;
+  }
     .header-buttom {
       display: none;
     }
@@ -121,6 +126,7 @@
       list-style: none;
       text-align: center;
       width: 100%;
+      background: $bg_color;
     }
     .header .menu__item {
       display: block;
