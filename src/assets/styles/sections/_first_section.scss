@@ -1,4 +1,4 @@
-@import './src/components/main';
+@import '../util/var';
 
 .first-section {
     width: 100%;
@@ -57,7 +57,7 @@
 
 .subtitle {
     font-size: 24px;
-    color: $subtitle;
+    color: $color_text;
 }
 
 .basic {
