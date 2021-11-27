@@ -1,0 +1,123 @@
+@import '../util/var';
+
+
+.gallery__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &__img {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      &__button button {
+        color: $basic_green;
+        padding: 15px 55px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 1px solid $basic_green;
+        margin-top: 50px;
+        margin-bottom: 120px;
+      }
+      
+      
+      &__img__third,
+      &__img__second,
+      &__img__first {
+        display: flex;
+        flex-direction: column;
+        max-width: 490px;
+        width: 100%;
+      }
+      
+      &__img__first-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $bg_color;
+        border-radius: 10px;
+        margin: 15px;
+      }
+      &__img__second-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $bg_color;
+        border-radius: 10px;
+        margin: 15px;
+      }
+      
+      
+      &__item__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background: $special_bg;
+        border-radius: 0px 0px 10px 10px;
+        backdrop-filter: blur(50px);
+        padding: 25px;
+      }
+      
+      &__text__title {
+        padding-left: 30px;
+        color: $title;
+        font-size: 20px;
+      }
+      
+      &__text__subtitle {
+        padding-right: 30px;
+        color: $basic_green;
+        font-size: 16px;
+      }
+      &__img__first-item__img,
+      &__img__second-item__img {
+         margin-bottom: -60px;
+  }
+  }
+  
+  .basic__title {
+    color: $title;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .basic__subtitle {
+    color: $color_text;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  
+  .special_img{
+    max-width: 412px;
+  }
+  
+  @media screen and (max-width:1506px) {
+    .gallery__section__img__third {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width:1015px) {
+    .gallery__section__img__third {
+      display: flex;
+    }
+  }
+  
+  @media screen and (max-width:500px) {
+    .special_img_item {
+      display: none;
+    }
+  }
