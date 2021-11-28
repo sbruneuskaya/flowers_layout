@@ -1,0 +1,78 @@
+@import '../util/var';
+
+.second__parent__icon{
+    width: 100%;
+    background: url('/assets/images/second_parent.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__item__card{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+      }
+    
+    &__item{
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 15px;
+        background: $color_white;
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      &__item__img{
+        width: 100px;
+        height: 100px;
+        background: $special_bg_parent;
+        border-radius: 50%;
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-left: 30px;
+      }
+      &__item__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      &__item__text__title{
+        color: $title;
+        font-size: 24px;
+        font-weight: bold;
+      }
+  }
+
+
+  
+  .second__title{
+    color: $color_white;
+    padding-top: 100px;
+    padding-bottom: 10px;
+  }
+  
+  .second__subtitle{
+    color: $color_white;
+  }
+  .second__parent__img{
+      width: 50%;
+  }
+
+  .parent__icon__item__text__subtitle{
+    max-width: 249px;
+    padding-right: 80px;
+  }
