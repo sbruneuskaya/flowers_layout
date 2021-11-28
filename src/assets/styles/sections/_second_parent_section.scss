@@ -2,7 +2,7 @@
 
 .second__parent__icon{
     width: 100%;
-    background: url('../images/second_parent.png') no-repeat;
+    background: url('/assets/images/second_parent.png') no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -30,7 +30,9 @@
         margin: 15px;
         background: $color_white;
         border-radius: 10px;
-        height: 160px;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
       }
       &__item__img{
         width: 100px;
@@ -41,7 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 30px;
+        // margin-left: 30px;
       }
       &__item__text{
         display: flex;
@@ -68,4 +70,9 @@
   }
   .second__parent__img{
       width: 50%;
+  }
+
+  .parent__icon__item__text__subtitle{
+    max-width: 249px;
+    padding-right: 80px;
   }
