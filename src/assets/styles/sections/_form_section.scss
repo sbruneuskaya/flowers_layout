@@ -1,0 +1,83 @@
+@import '../util/var';
+
+.form__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+
+    &__wrapper{
+        max-width: 1520px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: url('/assets/images/form_section.png') no-repeat;
+      }
+
+      &__wrapper__form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 120px;
+      }
+    
+      &__wrapper__text{
+        padding-top: 120px;
+        padding-left: 394px;
+        padding-right: 394px;
+      }
+      &__wrapper__mail{
+        max-width: 529px;
+        width: 100%;
+        height: 65px;
+        border: 0;
+        color: $color_text;
+        padding-left: 30px;
+        }
+        
+        &__wrapper__mail:focus{
+          outline: none;
+        }
+        
+        &__wrapper__submit{
+          max-width: 174px;
+          width: 100%;
+          height: 65px;
+          color: $color_white;
+          background: $basic_green;
+          padding: 17px 51px;
+          margin-left: 20px;
+          
+        }
+  }
+  
+  
+
+  
+  @media screen and (max-width:1444px){
+    .form__section__wrapper__text{
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    .form__section__wrapper__form{
+      flex-direction: column;
+      }
+      .form__section__wrapper__mail{
+        max-width: 300px;
+        margin-bottom: 20px;
+      }
+  }
+  
+  @media screen and (max-width:765px){
+    .form__section__wrapper{
+      background: none;
+    }
+  .form__section__wrapper__form{
+  display: none;
+  }
+  .form__section{
+    padding: 10px 10px;
+  }
+  }
