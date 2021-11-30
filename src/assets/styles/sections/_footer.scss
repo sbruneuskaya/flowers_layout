@@ -1,0 +1,131 @@
+@import '../util/var';
+
+.footer {
+    max-width: 1720px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    &__second {
+        background: $title;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    &__second__item__second {
+        max-width: 319px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: $color_white;
+    }
+    
+    &__second__item__first {
+        color: $color_white;
+    }
+    
+    &__second__item__first span {
+        color: $basic_green;
+    }
+    
+    &__first {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background: $bg_color;
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+    
+    &__first__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        max-width: 320px;
+    }
+    
+    &__first__item .footer__first__item__title {
+        font-size: 24px;
+        color: $title;
+    }
+    
+    &__first__item p {
+        font-size: 16px;
+        color: $color_text;
+        padding-bottom: 15px;
+    }
+    
+    &__first__item .green__string {
+        color: $basic_green;
+    }
+    
+    &__logo {
+        padding-bottom: 40px;
+    }
+    
+    &__logo__img {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    
+    &__logo__img img {
+        margin: 10px;
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+    .footer__first {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .footer__first__item {
+        padding-top: 40px;
+    }
+
+    .footer__second__item__first {
+        max-width: 30%;
+    }
+
+    .item__media {
+        padding-left: 37px;
+    }
+
+    .logo__media {
+        align-items: center;
+    }
+
+    .logo__text {
+        text-align: center;
+    }
+
+    .footer__item {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .footer__second__item__second {
+        justify-content: flex-end;
+    }
+
+    .footer__media {
+        display: none;
+    }
+}
