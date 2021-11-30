@@ -1,6 +1,7 @@
 @import '../util/var';
 
 .form__section{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +25,6 @@
     
       &__wrapper__text{
         padding-top: 120px;
-        padding-left: 394px;
-        padding-right: 394px;
       }
       &__wrapper__mail{
         max-width: 529px;
