@@ -1,4 +1,5 @@
 @import '../util/var';
+@import '../util/mixins';
 
 .footer {
     max-width: 1720px;
@@ -8,22 +9,16 @@
     padding: 20px;
 
     &__second {
+        @include flex(flex, row, center, space-around);
         background: $title;
         max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
         padding: 20px;
     }
     
     &__second__item__second {
+        @include flex(flex, row, center, space-between);
         max-width: 319px;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
         color: $color_white;
     }
     
@@ -36,21 +31,14 @@
     }
     
     &__first {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-evenly;
+        @include flex(flex, row, flex-start, space-evenly);
         flex-wrap: wrap;
         background: $bg_color;
-        padding-top: 120px;
-        padding-bottom: 140px;
+        padding: 120px 0 140px 0;
     }
     
     &__first__item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
+        @include flex(flex, column, flex-start, flex-end);
         max-width: 320px;
     }
     
@@ -88,9 +76,7 @@
 
 @media screen and (max-width:800px) {
     .footer__first {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex(flex, column, center, center);
         padding-top: 30px;
         padding-bottom: 50px;
     }

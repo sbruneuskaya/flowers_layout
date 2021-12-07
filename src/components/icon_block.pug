@@ -1,19 +1,12 @@
+mixin icon (src, title, p)
+  .parent__icon__item
+    .parent__icon__item__img
+      img(src= src)
+    .parent__icon__item__text
+      p.parent__icon__item__text__title= title
+      p= p
+
 .parent__icon.container
-  .parent__icon__item
-    .parent__icon__item__img
-      img(src='./assets/images/free.png' alt='')
-    .parent__icon__item__text
-      p.parent__icon__item__text__title Free Delivery 
-      p Free shipping the world
-  .parent__icon__item
-    .parent__icon__item__img
-      img(src='./assets/images/secure.png' alt='')
-    .parent__icon__item__text
-      p.parent__icon__item__text__title Secure Payment
-      p Secure Payment services is safer
-  .parent__icon__item
-    .parent__icon__item__img
-      img(src='./assets/images/eco.png' alt='')
-    .parent__icon__item__text
-      p.parent__icon__item__text__title Eco Friendly
-      p Eco-Friendly product keeps
+  +icon('./assets/images/free.png', 'Free Delivery', 'Free shipping the world')
+  +icon('./assets/images/secure.png', 'Secure Payment', 'Secure Payment services is safer')
+  +icon('./assets/images/eco.png', 'Eco Friendly', 'Eco-Friendly product keeps')

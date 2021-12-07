@@ -1,13 +1,10 @@
 @import '../util/var';
+@import '../util/mixins';
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, row, center, space-between);
     background-color: transparent;
     padding: 50px 20px;
-    // position: sticky;
     background: transparent;
     top: 0;
     left: 0;
@@ -20,10 +17,7 @@
     }
   
     &-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, row, center, space-around);
     padding-left: 20px;
     }
   
@@ -49,12 +43,9 @@
     }
 
     &-picture{
+      @include flex(flex, row, center, space-between);
         max-width: 137px;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
     }
     #menu__toggle {
       opacity: 0;
