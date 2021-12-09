@@ -1,23 +1,16 @@
+mixin card(src, title, subtitle)
+ .second__parent__icon__item
+   .second__parent__icon__item__img
+     img.second__parent__img(src= src)
+   .parent__icon__item__text
+     p.parent__icon__item__text__title= title
+     p.parent__icon__item__text__subtitle= subtitle
+
 .second__parent__icon.container
   .gallery__section__text
     p.basic__title.second__title Featured Products
     p.basic__subtitle.second__subtitle Smoothlu And healthy plant fore you and all people
   .second__parent__icon__item__card
-    .second__parent__icon__item
-      .second__parent__icon__item__img
-        img.second__parent__img(src='./assets/images/second_parent-first.png' alt='')
-      .parent__icon__item__text
-        p.parent__icon__item__text__title Watering
-        p.parent__icon__item__text__subtitle Free shipping around the world for all orders over $80
-    .second__parent__icon__item
-      .second__parent__icon__item__img
-        img.second__parent__img(src='./assets/images/second_parent-second.png' alt='')
-      .second__parent__icon__item__text
-        p.second__parent__icon__item__text__title Light
-        p.parent__icon__item__text__subtitle Secure Payment services is a safer, faster, more secure way to pay
-    .second__parent__icon__item
-      .second__parent__icon__item__img
-        img.second__parent__img(src='./assets/images/second_parent-third.png' alt='')
-      .second__parent__icon__item__text
-        p.second__parent__icon__item__text__title Fertilizer
-        p.parent__icon__item__text__subtitle Eco-Friendly product keeps both Invironmental and human safe
+    +card('./assets/images/second_parent-first.png', 'Watering', 'Free shipping around the world for all orders over $80')
+    +card('./assets/images/second_parent-second.png', 'Light', 'Secure Payment services is a safer, faster, more secure way to pay')
+    +card('./assets/images/second_parent-third.png', 'Fertilizer', 'Eco-Friendly product keeps both Invironmental and human safe')

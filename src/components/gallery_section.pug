@@ -1,3 +1,10 @@
+mixin gallary (src, title, subtitle)
+  .gallery__section__img__column-item__img
+    img(src= src)
+  .gallery__section__item__text 
+    p.gallery__section__text__title= title
+    p.gallery__section__text__subtitle= subtitle
+
 .gallery__section.container
   .gallery__section__text
     p.basic__title Plant Collection
@@ -5,49 +12,21 @@
   .gallery__section__img
     .gallery__section__img__column
       .gallery__section__img__column-item.special_img_item
-        .gallery__section__img__column-item__img
-          img(src='./assets/images/first-block__first-item.png' alt='')
-        .gallery__section__item__text
-          p.gallery__section__text__title Pet Friendly
-          p.gallery__section__text__subtitle 16 Items
+        +gallary('./assets/images/first-block__first-item.png', 'Pet Friendly', '16 Items')
       .gallery__section__img__column-item
-        .gallery__section__img__column-item__img
-          img.tui(src='./assets/images/first-block__second-item.png' alt='')
-        .gallery__section__item__text
-          p.gallery__section__text__title Indoor
-          p.gallery__section__text__subtitle 25 Items
+        +gallary('./assets/images/first-block__second-item.png', 'Indoor', '25 Items')
     .gallery__section__img__column
       .gallery__section__img__column-item
-        .gallery__section__img__column-item__img
-          img(src='./assets/images/second-block_first-item.png' alt='')
-        .gallery__section__item__text
-          p.gallery__section__text__title Outdoor
-          p.gallery__section__text__subtitle 30 Items
+        +gallary('./assets/images/second-block_first-item.png', 'Outdoor', '30 Items')
       .gallery__section__img__column-item
-        .gallery__section__img__column-item__img
-          img.tui(src='./assets/images/second-block_second-item.png' alt='')
-        .gallery__section__item__text
-          p.gallery__section__text__title Pet Friendly
-          p.gallery__section__text__subtitle 29 Items
+        +gallary('./assets/images/second-block_second-item.png', 'Pet Friendly', '29 Items')
       .gallery__section__img__column-item
-        .gallery__section__img__column-item__img
-          img.tui(src='./assets/images/second-block_third-item.png' alt='')
-        .gallery__section__item__text
-          p.gallery__section__text__title Indoor
-          p.gallery__section__text__subtitle 17 Items
+        +gallary('./assets/images/second-block_third-item.png', 'Indoor', '17 Items')
     .gallery__section__img__column
       .gallery__section__img__column-item.special_img_item
-        .gallery__section__img__column-item__img
-          img.special_img(src='./assets/images/third-block__first-item.png' alt='')
-        .gallery__section__item__text
-          p.gallery__section__text__title Pet Friendly
-          p.gallery__section__text__subtitle 16 Items
+        +gallary('./assets/images/third-block__first-item.png', 'Pet Friendly', '16 Items')
       .gallery__section__img__column-item
-        .gallery__section__img__column-item__img
-          img(src='./assets/images/third-block__second-item.png' alt='')
-        .gallery__section__item__text
-          p.gallery__section__text__title Office Collection
-          p.gallery__section__text__subtitle 25 Items
+        +gallary('./assets/images/third-block__second-item.png', 'Office Collection', '25 Items')
   .gallery__section__button
     form(action='https://github.com/sbruneuskaya')
       button View All

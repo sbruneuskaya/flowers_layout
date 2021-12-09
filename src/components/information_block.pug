@@ -1,25 +1,13 @@
+mixin information (src, title, subtitle)
+ .information__icons__item
+    .information__icons__item__img
+      img.information__img(src= src)
+    .information__icons__item__text
+      p.information__icons__item__text__title= title
+      p.information__icons__item__text__subtitle= subtitle
+
 .information__icons.container
-  .information__icons__item
-    .information__icons__item__img
-      img.information__img(src='./assets/images/information1.png' alt='')
-    .information__icons__item__text
-      p.information__icons__item__text__title 2000
-      p.information__icons__item__text__subtitle Total Service
-  .information__icons__item
-    .information__icons__item__img
-      img.information__img(src='./assets/images/information2.png' alt='')
-    .information__icons__item__text
-      p.information__icons__item__text__title 1000
-      p.information__icons__item__text__subtitle Home Delivary
-  .information__icons__item
-    .information__icons__item__img
-      img.information__img(src='./assets/images/information3.png' alt='')
-    .information__icons__item__text
-      p.information__icons__item__text__title 5000
-      p.information__icons__item__text__subtitle Happy Client
-  .information__icons__item
-    .information__icons__item__img
-      img.information__img(src='./assets/images/information4.png' alt='')
-    .information__icons__item__text
-      p.information__icons__item__text__title 3000
-      p.information__icons__item__text__subtitle Total Experts
+  +information('./assets/images/information1.png', '2000', 'Total Service')
+  +information('./assets/images/information2.png', '1000', 'Home Delivary')
+  +information('./assets/images/information3.png', '5000', 'Happy Client')
+  +information('./assets/images/information4.png', '3000', 'Total Experts')

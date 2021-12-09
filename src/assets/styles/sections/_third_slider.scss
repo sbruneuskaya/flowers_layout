@@ -1,4 +1,5 @@
 @import '../util/var';
+@import '../util/mixins';
 
 
 .third__slider__block {
@@ -15,10 +16,7 @@
 
   .third__slider__block .information__slider .information__icons{
     width: 400%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-evenly;
+    @include flex(flex, row, center, space-evenly);
     flex-wrap: wrap;
   }
   
@@ -127,10 +125,7 @@
   }
   
   .information__icons__item__text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, column, center, center);
     background: $special_bg_parent;
     border-radius: 10px;
     width: 100%;
