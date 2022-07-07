@@ -108,6 +108,7 @@
     margin: 30px;
     padding: 30px 0;
     position: relative;
+    transition: scale 500ms ease;
   }
   
   .slider__heart {
@@ -126,8 +127,7 @@
   .severin-item:hover {
     background: $basic_green;
     height: auto;
-    transform: scale(1.1, 1.3);
-  
+    transform: scale(1.1, 1.1);
   }
   
   .hybrid-item:hover>.slider__heart,
